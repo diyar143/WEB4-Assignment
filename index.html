@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VNL 2026 - Pro Volleyball Tryout Portal</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-light">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">VNL 2026 Tryouts</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#part1">Simple Contact Form</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#part2">Bootstrap Forms</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#part3">Professional Tryout Application</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container py-5">
+        
+        <section id="part1" class="mb-5">
+            <div class="card p-4 shadow-sm">
+                <h2 class="text-primary mb-4">Basic HTML Forms</h2>
+
+                <div class="mb-5 pb-4 border-bottom">
+                    <h4 class="text-secondary mb-3">Simple Contact Form</h4>
+                    <form id="basicForm">
+                        <div class="mb-3">
+                            <label for="t0-name" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="t0-name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="t0-email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="t0-email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="t0-message" class="form-label">Message</label>
+                            <textarea class="form-control" id="t0-message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-secondary">Submit</button>
+                        <div id="basicStatus" class="mt-2 text-success fw-bold"></div>
+                    </form>
+                </div>
+
+                <div>
+                    <h4 class="text-secondary mb-3">Form with HTML5 Validation</h4>
+                    <form>
+                        <div class="mb-3">
+                            <label for="t1-name" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="t1-name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="t1-email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="t1-email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="t1-message" class="form-label">Message</label>
+                            <textarea class="form-control" id="t1-message" maxlength="200" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section id="part2" class="mb-5">
+            <div class="card p-4 shadow-sm">
+                <h2 class="text-primary mb-4">Bootstrap Forms & Validation</h2>
+
+                <div class="mb-5 pb-4 border-bottom">
+                    <h4 class="text-secondary mb-3">Bootstrap Form Styling</h4>
+                    <form id="bootstrapForm" class="needs-validation" novalidate>
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label for="t2-name" class="form-label">Full Name</label>
+                                <input type="text" class="form-control" id="t2-name" placeholder="Kairat Nurtas" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="t2-email" class="form-label">Email Address</label>
+                                <input type="email" class="form-control" id="t2-email" placeholder="name@example.com" required>
+                            </div>
+                            <div class="col-12">
+                                <label for="t2-msg" class="form-label">Message</label>
+                                <textarea class="form-control" id="t2-msg" rows="3" placeholder="Write your message here..." required></textarea>
+                            </div>
+                            <div class="col-12">
+                                <button type="submit" class="btn btn-primary">Send Inquiry</button>
+                                <div id="bootstrapStatus" class="mt-2 text-success fw-bold"></div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <div>
+                    <h4 class="text-secondary mb-3">Bootstrap Validation Styles</h4>
+                    <form class="row g-3">
+                        <div class="col-md-6">
+                            <label for="t3-val" class="form-label">Valid Input Example</label>
+                            <input type="text" class="form-control is-valid" id="t3-val" value="Correct Value" required>
+                            <div class="valid-feedback">Looks good!</div>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="t3-inval" class="form-label">Invalid Input Example</label>
+                            <input type="email" class="form-control is-invalid" id="t3-inval" value="wrong-email" required>
+                            <div class="invalid-feedback">Please enter a valid email.</div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section id="part3" class="mb-5">
+            <div class="card p-4 shadow-sm">
+                <h2 class="text-primary mb-4">Professional Volleyball Team Tryout Application</h2>
+                
+                <form id="registerForm" class="needs-validation" novalidate>
+                    <div class="row g-3">
+                        <div class="col-sm-6">
+                            <label for="firstName" class="form-label">First Name</label>
+                            <input type="text" class="form-control" id="firstName" required>
+                            <div class="invalid-feedback">Valid first name is required.</div>
+                            <div class="valid-feedback">Looks good!</div>
+                        </div>
+
+                        <div class="col-sm-6">
+                            <label for="lastName" class="form-label">Last Name</label>
+                            <input type="text" class="form-control" id="lastName" required>
+                            <div class="invalid-feedback">Valid last name is required.</div>
+                            <div class="valid-feedback">Looks good!</div>
+                        </div>
+
+                        <div class="col-12">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" required>
+                            <div class="invalid-feedback">Please enter a valid email address.</div>
+                            <div class="valid-feedback">Looks good!</div>
+                        </div>
+
+                        <div class="col-sm-6">
+                            <label for="password" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="password" minlength="6" required>
+                            <div class="invalid-feedback">Password must be at least 6 characters long.</div>
+                            <div class="valid-feedback">Strong password!</div>
+                        </div>
+
+                        <div class="col-sm-6">
+                            <label for="confirmPassword" class="form-label">Confirm Password</label>
+                            <input type="password" class="form-control" id="confirmPassword" required>
+                            <div class="invalid-feedback">Passwords must match.</div>
+                            <div class="valid-feedback">Passwords match!</div>
+                        </div>
+
+                        <div class="col-12">
+                            <label class="form-label d-block">Gender</label>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="gender" id="male" required>
+                                <label class="form-check-label" for="male">Male</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="gender" id="female" required>
+                                <label class="form-check-label" for="female">Female</label>
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <label class="form-label d-block">Preferred Positions / Hobbies</label>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="hobby1" value="sports">
+                                <label class="form-check-label" for="hobby1">Outside Hitter</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="hobby2" value="reading">
+                                <label class="form-check-label" for="hobby2">Setter</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="hobby3" value="coding">
+                                <label class="form-check-label" for="hobby3">Libero</label>
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <label for="country" class="form-label">Country</label>
+                            <select class="form-select" id="country" required>
+                                <option value="">Choose...</option>
+                                <option value="kz">Kazakhstan</option>
+                                <option value="us">United States</option>
+                                <option value="uk">United Kingdom</option>
+                            </select>
+                            <div class="invalid-feedback">Please select a valid country.</div>
+                        </div>
+
+                        <div class="col-12 mt-4">
+                            <button class="btn btn-primary w-100 mb-2" type="submit">Submit Tryout Application</button>
+                            <button class="btn btn-secondary w-100" type="reset">Reset Form</button>
+                            <div id="registerStatus" class="mt-2 text-success fw-bold text-center"></div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
